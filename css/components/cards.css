@@ -69,7 +69,7 @@
   background-size: cover;
   background-position: center;
   height: auto;
-  width: 300px;
+  width: 280px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -78,4 +78,30 @@
   margin: 0px 0px;
   padding: 0px;
   border: 0px solid black;
+}
+
+.footer_card_left {
+  height: auto;
+  width: 400px;
+  border: 0px solid white;
+}
+
+.footer_card_right {
+  height: auto;
+  width: 250px;
+  border: 0px solid white;
+  padding-left: 40px;
+}
+
+.footer_card_middle {
+  height: auto;
+  width: 100px;
+  border: 0px solid white;
+}
+
+.footer_cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 110px;
+  flex-grow: 1;
 }
