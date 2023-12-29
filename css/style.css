@@ -361,83 +361,6 @@ ul {
   line-height: 300%;
 }
 
-@media (max-width: 960px) {
-  .container {
-    width: auto;
-  }
-
-  .bkg_black {
-    background: #232323;
-    display: flex;
-    margin: 0px 3%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-  }
-
-  .card img {
-    height: 90%;
-  }
-
-  .hero {
-    display: inline-flex;
-    padding: 80px 110px;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 100px;
-    border: 0px solid black;
-  }
-
-  .card {
-    display: block;
-    align-items: center;
-    justify-content: left;
-    align-self: stretch;
-    gap: 68px;
-    border: 0px solid white;
-  }
-
-}
-
-@media (max-width: 720px) {
-  .container {
-    width: auto;
-  }
-
-  .bkg_black {
-    background: #232323;
-    display: flex;
-    margin: 0px 3%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-  }
-
-  .card {
-    display: block;
-    align-items: center;
-    justify-content: left;
-    align-self: stretch;
-    gap: 68px;
-    border: 0px solid white;
-  }
-
-  .card img {
-    height: 80%;
-  }
-
-  .cards_grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 40px 0px;
-    gap: 72px;
-    flex-grow: 1;
-  }
-
-}
-
 @media (max-width: 540px) {
   .container {
     width: auto;
@@ -472,5 +395,45 @@ ul {
     margin: 40px 0px;
     gap: 72px;
     flex-grow: 1;
+  }
+
+  .hero {
+    display: block;
+    padding: 80px 3%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 100px;
+    border: 0px solid black;
+  }
+
+  .bkg_black_left_aligned {
+    background: #232323;
+    display: block;
+    margin: 0px 3%;
+    padding-bottom: 88px;
+    padding-top: 88px;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 40px;
+  }
+
+  .footer {
+    display: block;
+    margin: 0px 0px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 32px;
+  }
+
+  .footer2 {
+    background: #232323;
+    display: block;
+    margin: 0px 0px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
