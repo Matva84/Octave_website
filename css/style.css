@@ -150,6 +150,21 @@ body {
   border: 0px solid white;
 }
 
+.competences {
+  background: white;
+  display: flex;
+  color: black;
+  margin: 0px 0px;
+  padding-bottom: 88px;
+  padding-top: 88px;
+  padding-left: 110px;
+  padding-right: 110px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
 p {
   color: var(--Deep-Dark, #1E1E1E);
   font-family: DM Sans;
@@ -370,6 +385,7 @@ ul {
     background: #232323;
     display: flex;
     margin: 0px 3%;
+    padding: 15% 3%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -379,14 +395,15 @@ ul {
   .card {
     display: block;
     align-items: center;
-    justify-content: left;
+    justify-content: flex-start;
     align-self: stretch;
     gap: 68px;
     border: 0px solid white;
   }
 
   .card img {
-    height: 70%;
+    width: 100%;
+    padding-bottom: 40px;
   }
 
   .cards_grid {
@@ -407,14 +424,23 @@ ul {
   }
 
   .bkg_black_left_aligned {
-    background: #232323;
-    display: block;
+    display: flex;
     margin: 0px 3%;
-    padding-bottom: 88px;
-    padding-top: 88px;
+    padding-bottom: 40px;
+    padding-top: 40px;
     padding-left: 10px;
     padding-right: 10px;
     gap: 40px;
+  }
+
+  .competences {
+    display: block;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  h3 {
+    text-align: left;
   }
 
   .footer {
@@ -428,12 +454,15 @@ ul {
   }
 
   .footer2 {
-    background: #232323;
     display: block;
     margin: 0px 0px;
     padding-bottom: 20px;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  h8 {
+    text-align: left;
   }
 }
