@@ -76,6 +76,17 @@ body {
   width: auto;
 }
 
+.vlines {
+  min-height: 100%;
+  background:
+    linear-gradient(#F0F0F0 0 0) calc(0.5*100%/5),
+    linear-gradient(#F0F0F0 0 0) calc(1.83*100%/5),
+    linear-gradient(#F0F0F0 0 0) calc(3.16*100%/5),
+    linear-gradient(#F0F0F0 0 0) calc(4.5*100%/5);
+  background-size: 1px 100%;
+  background-repeat: no-repeat;
+}
+
 .hero {
   display: inline-flex;
   padding: 80px 110px;
@@ -99,9 +110,12 @@ body {
 }
 
 .hero_right {
-  height: cover;
   border-radius: 80px 0px;
   border: 0px solid black;
+  width: calc(1.33*100%/5);
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .bkg_black {
@@ -151,7 +165,6 @@ body {
 }
 
 .competences {
-  background: white;
   display: flex;
   color: black;
   margin: 0px 0px;
