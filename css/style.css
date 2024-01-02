@@ -464,6 +464,13 @@ ul {
   line-height: 300%;
 }
 
+label {
+  display: none;
+}
+label, #toggle {
+  display: none;
+}
+
 @media (max-width: 540px) {
   .container {
     width: auto;
@@ -553,4 +560,40 @@ ul {
   h8 {
     text-align: left;
   }
+
+  nav {
+    height: 60px;
+  }
+
+  nav .menu {
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background: white;
+        height: 320px;
+    }
+
+    nav .menu a {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 125px;
+    }
+
+  label {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+  }
+
+  #toggle:checked + .menu {
+    display: flex;
+  }
+
 }
