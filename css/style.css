@@ -1,6 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Poppins:wght@500&display=swap');
 @import url("components/cards.css");
 
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --animation-timing: 1s;
+  --orange:  #DAA520;
+  --light: hsl(16, 99%, 99%);
+  --dark: hsl(16, 99%, 1%);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.menu .item {
+  margin-left: 1rem;
+}
+
+.menu .link {
+  color: #1E1E1E;
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 16px 16px;
+  text-decoration: none;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu .link::after {
+  content: "";
+
+  display: block;
+  height: 0.1rem;
+  background: var(--orange);
+
+  transform: scale(0);
+  transition: transform var(--animation-timing);
+}
+
+.menu .link:hover::after {
+  transform: scale(1);
+  transform-origin: center;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
 body {
   background-color: white;
 }
@@ -119,6 +190,7 @@ body {
   height: 700px;
   padding-right: calc(1.37*100%/5);
   background-image: url(../images/Image_familly.svg);
+  background-repeat: no-repeat;
 }
 
 .bkg_black {
