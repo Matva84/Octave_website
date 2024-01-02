@@ -30,24 +30,22 @@
 .cards_grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 40px 0px;
-  gap: 72px;
-  flex-grow: 1;
+  border: 0px solid black;
 }
 
 .competence_card {
   background-size: cover;
   background-position: center;
   height: auto;
-  width: 350px;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 16px;
-  margin: 0px 0px;
-  padding: 0px;
   border: 0px solid black;
+  gap: 16px;
+  padding-top: 72px;
+  padding-right: calc(0.515*100%/5);
 }
 
 .hono_card {
