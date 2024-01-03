@@ -1,15 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Poppins:wght@500&display=swap');
 @import url("components/cards.css");
 
-html {
-  scroll-behavior: smooth;
-}
+
 
 :root {
   --animation-timing: 1s;
   --orange:  #DAA520;
   --light: hsl(16, 99%, 99%);
   --dark: hsl(16, 99%, 1%);
+  scroll-behavior: smooth;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
 }
 
 .menu {
@@ -70,6 +77,11 @@ body {
   background-color: white;
 }
 
+nav {
+  position: sticky;
+  top: 0;
+}
+
 .banner {
   display: flex;
   align-items: center;
@@ -79,8 +91,6 @@ body {
   flex-shrink: 0;
   border-bottom: 1px solid #E7E7E7;
   background: #FFF;
-  position: sticky;
-  top: 0;
 }
 
 .text_banner {
@@ -155,13 +165,38 @@ body {
   background-repeat: no-repeat;
 }
 
-.hero {
-  display: inline-flex;
-  padding: 80px 0px;
-  justify-content: flex-end;
+.bkg_black {
+  background: #232121;
+  display: flex;
+  margin: 0px 0px;
+  padding-bottom: 88px;
+  padding-top: 88px;
+  padding-left: 88px;
+  padding-right: 88px;
+  flex-direction: column;
   align-items: center;
-  gap: calc(0.515*100%/5);
+  justify-content: center;
+  gap: 40px;
+}
+.hero {
+  display: flex;
+  padding: 80px 0px;
+  margin: 0;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-shrink: 2;
+  gap: 80px;
   border: 0px solid black;
+}
+
+.hero_right {
+  background-image: url(../images/Image_familly.svg);
+  background-repeat: no-repeat;
+  padding-right: 0px;
+  border-radius: 80px 0px;
+  border: 0px solid black;
+  width: 1255px;
+  height: 700px;
 }
 
 .hero_left {
@@ -181,32 +216,8 @@ body {
   display: none;
 }
 
-.hero_right {
-  border-radius: 80px 0px;
-  border: 0px solid black;
-  width: calc(1.1*100%/5);
-  height: 700px;
-  padding-right: calc(1.37*100%/5);
-  background-image: url(../images/Image_familly.svg);
-  background-repeat: no-repeat;
-}
-
 .hero_top {
   display: none;
-}
-
-.bkg_black {
-  background: #232323;
-  display: flex;
-  margin: 0px 0px;
-  padding-bottom: 88px;
-  padding-top: 88px;
-  padding-left: 88px;
-  padding-right: 88px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
 }
 
 .card {
@@ -363,7 +374,7 @@ h7 {
 
 h8 {
   color: #FFF;
-  text-align: center;
+  text-align: left;
   font-family: DM Sans;
   font-size: 32px;
   font-style: normal;
@@ -436,7 +447,6 @@ a {
 
 .footer {
   background: #232323;
-  display: flex;
   margin: 0px 0px;
   padding-bottom: 80px;
   padding-top: 80px;
@@ -497,7 +507,23 @@ label, #toggle {
   display: none;
 }
 
-@media (max-width: 990px) {
+.text_banner_yellow_sticky {
+  display: none;
+}
+
+@media (max-width: 1800px) {
+
+  .hero_right {
+    width: 1285px;
+  }
+}
+@media (max-width: 1200px) {
+
+  .hero_right {
+    width: 1255px;
+  }
+}
+@media (max-width: 900px) {
 
   .close {
     display: flex;
@@ -544,8 +570,10 @@ label, #toggle {
     display: flex;
   }
 
+  .hero_right {
+    width: 1340px;
+  }
 }
-
 @media (max-width: 540px) {
   .container {
     width: auto;
@@ -628,21 +656,47 @@ label, #toggle {
 
   .hero_top {
     display: block;
+    background-image: url(../images/Image_familly.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 80px 0px;
-    border: 1px solid black;
+    border: 0px solid black;
     width: calc(3.65*100%/5);
     height: 200px;
     padding-right: calc(1.37*100%/5);
-    background-image: url(../images/Image_familly.svg);
-    background-repeat: no-repeat;
   }
 
   .hero_left img {
     padding-left: calc(0.75*100%/5);
   }
 
-  .hero_left h2 {
+  .hero_left a {
     display: none;
+  }
+
+  .text_banner_yellow_sticky {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: calc(3*1.38*100%/5);
+    padding-left: calc(1*1.37*100%/5);
+
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 50px;
+    left: 90px;
+
+    color: white;
+    font-family: "DM Sans";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 16px 0px;
+    background: var(--Gold, #DAA520);
+    padding: 16px 32px;
+    gap: 8px;
+    text-decoration: none;
   }
 
   .hero_right {
@@ -737,6 +791,11 @@ label, #toggle {
     display: inline;
     width: 160px;
     margin-top: 0px;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
   }
 
 }
