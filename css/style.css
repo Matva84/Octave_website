@@ -66,12 +66,6 @@ html {
   }
 }
 
-
-
-
-
-
-
 body {
   background-color: white;
 }
@@ -183,6 +177,10 @@ body {
   margin-top: 0px;
 }
 
+.img_hidden {
+  display: none;
+}
+
 .hero_right {
   border-radius: 80px 0px;
   border: 0px solid black;
@@ -191,6 +189,10 @@ body {
   padding-right: calc(1.37*100%/5);
   background-image: url(../images/Image_familly.svg);
   background-repeat: no-repeat;
+}
+
+.hero_top {
+  display: none;
 }
 
 .bkg_black {
@@ -216,11 +218,27 @@ body {
   border: 0px solid white;
 }
 
+.card2 {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  align-self: stretch;
+  gap: 68px;
+  border: 0px solid white;
+}
+
 .card img {
-  height: auto;
+  height: 100%;
+  border: 0px solid white;
 }
 
 .desc_avocate {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border: 0px solid white;
+}
+.desc_avocate2 {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -443,6 +461,10 @@ a {
   justify-content: center;
 }
 
+.footer2 a{
+  display: none;
+}
+
 h9 {
   color: #8B949C;
   font-family: DM Sans;
@@ -471,6 +493,59 @@ label, #toggle {
   display: none;
 }
 
+.close {
+  display: none;
+}
+
+@media (max-width: 990px) {
+
+  .close {
+    display: flex;
+    position: absolute;
+    top: 8px;
+    right: 25px;
+    font-size: 36px;
+    color: black;
+    text-decoration: none;
+  }
+
+  nav {
+    height: 60px;
+  }
+
+  nav .menu {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: white;
+    height: 320px;
+  }
+
+  nav .menu a {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 125px;
+  }
+
+  label {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+  }
+
+  #toggle:checked + .menu {
+    display: flex;
+  }
+
+}
+
 @media (max-width: 540px) {
   .container {
     width: auto;
@@ -479,12 +554,12 @@ label, #toggle {
   .bkg_black {
     background: #232323;
     display: flex;
-    margin: 0px 3%;
+    margin: 0px 0px;
     padding: 15% 3%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 0px;
   }
 
   .card {
@@ -494,6 +569,39 @@ label, #toggle {
     align-self: stretch;
     gap: 68px;
     border: 0px solid white;
+  }
+
+  .contact {
+    background-image: url("../images/map.svg");
+    background-size: cover;
+    display: flex;
+    margin: 80px 0px;
+    padding-bottom: 88px;
+    padding-top: 88px;
+    padding-left: 0px;
+    padding-right: 88px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: auto;
+    height: 300px;
+    gap: 40px;
+    flex-shrink: 0;
+  }
+
+  .white_bkg {
+    background: white;
+    width: 275px;
+    height: 574px;
+    position: relative;
+    top: 45px;
+    left: 10%;
+    border-radius: 80px 0px 0px 0px;
+    border: 0px solid grey;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .card img {
@@ -511,26 +619,49 @@ label, #toggle {
 
   .hero {
     display: block;
-    padding: 80px 3%;
+    padding: 80px 0px;
     justify-content: flex-end;
     align-items: center;
     gap: 100px;
     border: 0px solid black;
   }
 
+  .hero_top {
+    display: block;
+    border-radius: 80px 0px;
+    border: 1px solid black;
+    width: calc(3.65*100%/5);
+    height: 200px;
+    padding-right: calc(1.37*100%/5);
+    background-image: url(../images/Image_familly.svg);
+    background-repeat: no-repeat;
+  }
+
+  .hero_left img {
+    padding-left: calc(0.75*100%/5);
+  }
+
+  .hero_left h2 {
+    display: none;
+  }
+
+  .hero_right {
+    display: none;
+  }
+
   .bkg_black_left_aligned {
     display: flex;
-    margin: 0px 3%;
+    margin: 0px 0px;
     padding-bottom: 40px;
     padding-top: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 3%;
+    padding-right: 3%;
     gap: 40px;
   }
 
   .competences {
     display: block;
-    padding-left: 3%;
+    padding-left: 0px;
     padding-right: 3%;
   }
 
@@ -538,62 +669,74 @@ label, #toggle {
     text-align: left;
   }
 
-  .footer {
-    display: block;
-    margin: 0px 0px;
-    padding-bottom: 80px;
-    padding-top: 80px;
-    padding-left: 10px;
-    padding-right: 10px;
-    gap: 32px;
-  }
-
-  .footer2 {
-    display: block;
-    margin: 0px 0px;
-    padding-bottom: 20px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
   h8 {
     text-align: left;
   }
 
-  nav {
-    height: 60px;
+  .img_hidden {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-top: 56px;
+    border: 0px solid white;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    height: auto;
   }
 
-  nav .menu {
-        display: none;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        background: white;
-        height: 320px;
-    }
-
-    nav .menu a {
-        width: 100%;
-        height: auto;
-        position: relative;
-        top: 125px;
-    }
-
-  label {
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    font-size: 40px;
-    color: black;
-    cursor: pointer;
+  .card2 img {
+    display: none;
   }
 
-  #toggle:checked + .menu {
-    display: flex;
+  .card2 {
+    padding-top: 0px;
+  }
+
+  .bkg_black h3 {
+    padding-bottom: 40px;
+  }
+
+  .footer_card_left {
+    height: auto;
+    border: 0px solid white;
+  }
+
+  .footer_card_right {
+    height: auto;
+    border: 0px solid white;
+    padding-left: 0px;
+  }
+
+  .footer_card_middle {
+    height: auto;
+    border: 0px solid white;
+    padding-top: 24px;
+  }
+
+  .footer_cards {
+    display: block;
+    width: 100%;
+    justify-content: space-between;
+    gap: 0px;
+    flex-grow: 1;
+  }
+
+  .footer2 h9{
+    display: none;
+  }
+
+  .footer2 a{
+    color: white;
+    font-family: "DM Sans";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 16px 0px;
+    background: var(--Gold, #DAA520);
+    text-decoration: none;
+    display: inline;
+    width: 160px;
+    margin-top: 0px;
   }
 
 }

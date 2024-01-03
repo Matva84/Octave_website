@@ -16,8 +16,11 @@
         <img src="images/Octave_banner.svg" alt="Octave">
         <img src="images/Avocates_banner.svg" alt="Avocates">
       </div>
-      <div class="menus">
-        <label for="toggle">☰</label>
+
+
+
+      <div class="menus" id="mySidenav">
+        <label id="openBtn" for="toggle">☰</label>
         <input type="checkbox" id="toggle">
         <ul class="menu">
           <li class="item"><a href="#presentation" class="link">Présentation</a></li>
@@ -26,16 +29,24 @@
           <li class="item"><a href="#honoraires" class="link">Honoraires</a></li>
           <li class="item"><a href="#contact" class="text_banner_yellow">Contact</a></li>
         </ul>
+        <a href="#" id="closeBtn" class="close">x</a>
       </div>
+
+
+
+
     </div>
   </nav>
-
 
     <div class="vlines">
     <div class="container">
       <div class="hero" id="presentation">
+
         <div class="hero_left">
           <img src="images/Octave.svg" alt="">
+          <div class="hero_top">
+
+          </div>
           <h1>
             Né de la rencontre de ses deux associées,
             le Cabinet Octave Avocats offre une réponse juridique
@@ -56,9 +67,7 @@
             Le Cabinet Octave avocats se donne pour mission d’aider ses clients à traverser
             les moments clés de leur vie, avec empathie et expertise.
           </p>
-          <h2 class="text_banner_yellow">
-            Travaillons ensemble
-          </h2>
+          <a href="#contact" class="text_banner_yellow">Travaillons ensemble</a>
         </div>
         <div class="hero_right">
 
@@ -83,8 +92,11 @@
               <h7>A la suite d’une expérience en étude notariale, ainsi qu’en gestion de patrimoine en intégrant un cabinet dédié, Marine SABLAYROLLES consacre son activité exclusivement au droit de la famille et du patrimoine depuis 2014.</h7>
             </div>
           </div>
+          <div class="img_hidden">
+            <img src="images/IMG-Eugenie.svg" alt="Eugénie PERCHE">
+          </div>
         </div>
-        <div class="card">
+        <div class="card2">
           <div class="desc_avocate">
             <div class="desc_name">
               <h4>Eugénie PERCHE</h4>
@@ -134,7 +146,7 @@
 
         <div class="competence_card">
           <div class="competence_card_number">04</div>
-          <div class="competence_card_title">Les succssions</div>
+          <div class="competence_card_title">Les successions</div>
           <div class="competence_card_text">
             Partages amiables ou judiciaires, contestation de testaments, contestation de donations
           </div>
@@ -256,5 +268,8 @@
   </div>
   <div class="footer2">
     <h9>2024 © Octave Avocats</h9>
+    <a href="#contact" class="text_banner_yellow">Travaillons ensemble</a>
   </div>
 </body>
+<script type="module" src="lib/burger.js"></script>
+</html>
