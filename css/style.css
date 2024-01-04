@@ -593,6 +593,11 @@ label, #toggle {
   }
 }
 @media only screen and (max-width: 768px) {
+
+  .text_banner_yellow {
+    display: none;
+  }
+
   /* hide classic menu */
   #topnav_responsive_menu {
     display: none;
@@ -636,11 +641,12 @@ label, #toggle {
     right: 0;
     top: 0;
 
-    min-width: 50vw;
+    min-width: 100vw;
     height: 100vh;
-    padding: 56px 0 0;
+    padding-top: 0px;
 
     text-align: center;
+    align-items: center;
 
     background: white;
     list-style-type: none;
@@ -648,7 +654,7 @@ label, #toggle {
   }
 
   #topnav_responsive_menu li {
-    padding: 12px 24px;
+    padding: 12px 0vw;
   }
 
   #topnav_responsive_menu a {
