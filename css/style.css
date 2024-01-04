@@ -654,7 +654,8 @@ label, #toggle {
   }
 
   #topnav_responsive_menu li {
-    padding: 12px 0vw;
+    padding-top: 12px;
+    padding-right: 50px;
   }
 
   #topnav_responsive_menu a {
@@ -734,7 +735,7 @@ label, #toggle {
 
   /* change color when opening the menu */
   #topnav_hamburger_icon.open span {
-    background: black;
+    background: var(--orange);
   }
   /* the first span rotates 45° \ */
   #topnav_hamburger_icon.open span:nth-child(1) {
