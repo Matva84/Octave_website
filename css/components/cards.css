@@ -67,6 +67,7 @@
   height: auto;
   width: 400px;
   border: 0px solid white;
+  padding-top: 32px;
 }
 
 .footer_card_right {
