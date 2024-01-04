@@ -676,8 +676,8 @@ label, #toggle {
     display: block;
     position: relative;
     margin: 16px;
-    width: 33px;
-    height: 28px;
+    width: 23px;
+    height: 23px;
     z-index: 100;
     -webkit-user-select: none;
     user-select: none;
@@ -719,14 +719,14 @@ label, #toggle {
     transform-origin: left top;
   }
   #topnav_hamburger_icon span:nth-child(2) {
-    top: 12px;
+    top: 8px;
     -webkit-transform-origin: left center;
     -moz-transform-origin: left center;
     -o-transform-origin: left center;
     transform-origin: left center;
   }
   #topnav_hamburger_icon span:nth-child(3) {
-    top: 24px;
+    top: 16px;
     -webkit-transform-origin: left bottom;
     -moz-transform-origin: left bottom;
     -o-transform-origin: left bottom;
