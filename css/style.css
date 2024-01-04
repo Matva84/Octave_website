@@ -762,6 +762,10 @@ label, #toggle {
 
 @media (max-width: 540px) {
 
+  .banner {
+    padding-right: 8px;
+  }
+
   .vlines {
     min-height: 100%;
     background:
@@ -911,10 +915,7 @@ label, #toggle {
   .bkg_black_left_aligned {
     display: flex;
     margin: 0px 0px;
-    padding-bottom: 40px;
-    padding-top: 40px;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding: 40px 24px;
     gap: 40px;
   }
 
