@@ -397,7 +397,7 @@ h8 {
 }
 
 .contact {
-  background-image: url("../images/map.svg");
+  background-image: url("../images/Map.svg");
   background-size: cover;
   display: flex;
   margin: 80px 0px;
@@ -667,7 +667,7 @@ label, #toggle {
     justify-content: flex-end;
     align-items: center;
     gap: 100px;
-    border: 1px solid black;
+    border: 0px solid black;
   }
 
   .hero_top {
@@ -676,7 +676,7 @@ label, #toggle {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 80px 0px;
-    border: 1px solid black;
+    border: 0px solid black;
     width: calc(4.725*100%/5);
     height: 200px;
     padding-left: calc(0.257*100%/5);
@@ -765,9 +765,10 @@ label, #toggle {
   }
 
   .footer_card_left {
-    height: auto;
-    border: 1px solid white;
+    border: 0px solid white;
     padding-top: 32px;
+    width: 300px;
+    border: 0px solid green;
   }
 
   .footer_card_right {
@@ -790,22 +791,8 @@ label, #toggle {
     flex-grow: 1;
   }
 
-  .footer2 h9{
+  .footer2 {
     display: none;
-  }
-
-  .footer2 a{
-    color: white;
-    font-family: "DM Sans";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    border-radius: 16px 0px;
-    background: var(--Gold, #DAA520);
-    text-decoration: none;
-    display: inline;
-    width: 160px;
-    margin-top: 0px;
   }
 
   nav {
@@ -817,6 +804,5 @@ label, #toggle {
     padding-top: 0px;
     border: 0px solid red;
   }
-
 
 }
