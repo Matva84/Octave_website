@@ -575,15 +575,31 @@ label, #toggle {
   }
 }
 @media (max-width: 540px) {
+
+  .vlines {
+    min-height: 100%;
+    background:
+      linear-gradient(#F0F0F0 0 0) calc(0.257*100%/5),
+      linear-gradient(#F0F0F0 0 0) calc(1.848*100%/5),
+      linear-gradient(#F0F0F0 0 0) calc(3.181*100%/5),
+      linear-gradient(#F0F0F0 0 0) calc(4.772*100%/5);
+    background-size: 1px 100%;
+    background-repeat: no-repeat;
+  }
+
   .container {
     width: auto;
+    margin: 0;
+    padding: calc(0.257*100%/5);
+    width: calc(4.515*100%/5);
+    border: 0px solid green;
   }
 
   .bkg_black {
     background: #232323;
     display: flex;
     margin: 0px 0px;
-    padding: 15% 3%;
+    padding: 56px 24px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -647,11 +663,11 @@ label, #toggle {
 
   .hero {
     display: block;
-    padding: 80px 0px;
+    padding: 64px 0px;
     justify-content: flex-end;
     align-items: center;
     gap: 100px;
-    border: 0px solid black;
+    border: 1px solid black;
   }
 
   .hero_top {
@@ -660,10 +676,10 @@ label, #toggle {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 80px 0px;
-    border: 0px solid black;
-    width: calc(3.65*100%/5);
+    border: 1px solid black;
+    width: calc(4.725*100%/5);
     height: 200px;
-    padding-right: calc(1.37*100%/5);
+    padding-left: calc(0.257*100%/5);
   }
 
   .hero_left img {
@@ -679,13 +695,12 @@ label, #toggle {
     align-items: center;
     justify-content: center;
 
-    width: calc(3*1.38*100%/5);
-    padding-left: calc(1*1.37*100%/5);
+    width: 310px;
 
     position: -webkit-sticky;
     position: sticky;
-    bottom: 50px;
-    left: 90px;
+    bottom: 30px;
+    left: 80px;
 
     color: white;
     font-family: "DM Sans";
@@ -715,8 +730,7 @@ label, #toggle {
 
   .competences {
     display: block;
-    padding-left: 0px;
-    padding-right: 3%;
+    padding: 56px 0px;
   }
 
   h3 {
@@ -752,7 +766,8 @@ label, #toggle {
 
   .footer_card_left {
     height: auto;
-    border: 0px solid white;
+    border: 1px solid white;
+    padding-top: 32px;
   }
 
   .footer_card_right {
@@ -797,5 +812,11 @@ label, #toggle {
     position: sticky;
     top: 0;
   }
+
+  .competence_card {
+    padding-top: 0px;
+    border: 0px solid red;
+  }
+
 
 }
