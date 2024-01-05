@@ -18,6 +18,11 @@ html {
   background: transparent;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .menu {
   display: flex;
   align-items: center;
@@ -895,7 +900,6 @@ label, #toggle {
     margin-right: calc(0.24*100%/5);
     margin-left: calc(0.25*100%/5);
 
-
     position: -webkit-sticky;
     position: sticky;
     bottom: 30px;
@@ -909,7 +913,6 @@ label, #toggle {
     border-radius: 16px 0px;
     background: var(--Gold, #DAA520);
     padding: 16px 32px;
-    gap: 8px;
     text-decoration: none;
   }
 
