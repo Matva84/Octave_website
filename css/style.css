@@ -304,7 +304,7 @@ h3 {
   color: #FFF;
   text-align: center;
   font-family: DM Sans;
-  font-size: 48px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
@@ -323,7 +323,7 @@ h4 {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 200%;
+  line-height: 150%;
   padding: 0px 0px;
   margin: 0px 0px;
 }
@@ -336,7 +336,7 @@ h5 {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  padding: 0px 0px;
+  padding: 8px 0px;
   margin: 0px 0px;
 }
 
@@ -347,14 +347,18 @@ h6 {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
-  padding: 16px 0px;
+  line-height: 170%;
+  padding: 0px 0px;
   margin: 0px 0px;
 }
 
 #h6_black {
   color: black;
   align-self: flex-start;
+  padding-top: 16px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 h7 {
@@ -370,13 +374,18 @@ h7 {
 #h7_grey {
   color: #8B949C;
   align-self: stretch;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 h8 {
   color: #FFF;
   text-align: left;
   font-family: DM Sans;
-  font-size: 32px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 100%; /* 32px */
@@ -427,6 +436,16 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 200%;
+  text-decoration: underline;
+}
+
+.mailto {
+  color: var(--Deep-Dark, #1E1E1E);
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 250%;
   text-decoration: underline;
 }
 
@@ -693,7 +712,7 @@ label, #toggle {
     margin-bottom: 5px;
 
     background: black;
-    border-radius: 3px;
+    border-radius: 0px;
 
     z-index: 100;
 
@@ -823,21 +842,6 @@ label, #toggle {
     height: 300px;
     gap: 40px;
     flex-shrink: 0;
-  }
-
-  .white_bkg {
-    background: white;
-    width: 275px;
-    height: 574px;
-    position: relative;
-    top: 45px;
-    left: 10%;
-    border-radius: 80px 0px 0px 0px;
-    border: 0px solid grey;
-    padding: 40px 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
   }
 
   .card img {
@@ -998,13 +1002,13 @@ label, #toggle {
 
   .white_bkg {
     background: white;
-    width: 230px;
+    width: auto;
     height: 574px;
 
     border-radius: 80px 0px 0px 0px;
     border: 0px solid grey;
     padding-left: calc(0.5*100%/5);
-    padding-right: calc(0.5*100%/5);
+    padding-right: calc(0.25*100%/5);
     padding-top: 40px;
     padding-bottom: 40px;
     display: flex;
