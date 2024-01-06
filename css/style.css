@@ -214,6 +214,7 @@ nav {
 .hero_left img {
   width: calc(2.5*1.33*100%/5);
   margin-top: 0px;
+  padding-bottom: 40px;
 }
 
 .img_hidden {
@@ -276,7 +277,7 @@ nav {
   display: flex;
   color: black;
   margin: 0px 0px;
-  padding-bottom: 88px;
+  padding-bottom: 44px;
   padding-top: 88px;
   padding-left: 0px;
   padding-right: 0px;
@@ -308,7 +309,7 @@ h3 {
   color: #FFF;
   text-align: center;
   font-family: 'DM Sans';
-  font-size: 40px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
@@ -554,15 +555,48 @@ label, #toggle {
 }
 
 @media (max-width: 1800px) {
-
   .hero_right {
     width: 1285px;
   }
 }
-@media (max-width: 1200px) {
-
+@media (max-width: 1700px) {
   .hero_right {
-    width: 1255px;
+    width: 1285px;
+  }
+}
+@media (max-width: 1600px) {
+  .hero_right {
+    width: 1295px;
+  }
+}
+@media (max-width: 1500px) {
+  .hero_right {
+    width: 1300px;
+  }
+}
+@media (max-width: 1400px) {
+  .hero_right {
+    width: 1310px;
+  }
+}
+@media (max-width: 1300px) {
+  .hero_right {
+    width: 1320px;
+  }
+}
+@media (max-width: 1200px) {
+  .hero_right {
+    width: 1340px;
+  }
+}
+@media (max-width: 1100px) {
+  .hero_right {
+    width: 1360px;
+  }
+}
+@media (max-width: 1000px) {
+  .hero_right {
+    width: 1380px;
   }
 }
 @media (max-width: 900px) {
@@ -786,6 +820,12 @@ label, #toggle {
 
 @media (max-width: 540px) {
 
+  /* disable horizontal scrolling  */
+  #root {
+    position: relative;
+    overflow-x: hidden;
+  }
+
   .banner {
     padding-right: 8px;
   }
@@ -845,7 +885,7 @@ label, #toggle {
     align-items: flex-start;
     justify-content: flex-start;
     width: auto;
-    height: 300px;
+    height: 500px;
     gap: 40px;
     flex-shrink: 0;
   }
@@ -858,8 +898,9 @@ label, #toggle {
   .cards_grid {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 40px 0px;
-    gap: 72px;
+    margin: 0px 0px;
+    padding-top: 40px;
+    gap: 64px;
     flex-grow: 1;
   }
 
@@ -924,7 +965,11 @@ label, #toggle {
     display: flex;
     margin: 0px 0px;
     padding: 40px 24px;
-    gap: 40px;
+    gap: 16px;
+  }
+
+  .bkg_black_left_aligned h3{
+    padding-bottom: 16px;
   }
 
   .competences {
@@ -934,6 +979,12 @@ label, #toggle {
 
   h3 {
     text-align: left;
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 40px */
   }
 
   h8 {
@@ -966,7 +1017,7 @@ label, #toggle {
   .footer_card_left {
     border: 0px solid white;
     padding-top: 32px;
-    width: 340px;
+    width: 310px;
     border: 0px solid green;
   }
 
@@ -1001,6 +1052,7 @@ label, #toggle {
 
   .competence_card {
     padding-top: 0px;
+    padding-bottom: 0px;
     border: 0px solid red;
   }
 
