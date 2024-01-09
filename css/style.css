@@ -16,12 +16,16 @@ html {
   border: 0;
   outline: 0;
   background: transparent;
+  /*overflow-x: hidden;*/
 }
 
 body {
   margin: 0;
   padding: 0;
 }
+
+.ancres {scroll-margin-top: 150px;}
+.ancres_competences {scroll-margin-top: 80px;}
 
 .menu {
   display: flex;
@@ -140,6 +144,8 @@ nav {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  padding-top: 0px;
+  padding-bottom: 0px;
   gap: 6px;
 }
 
@@ -200,7 +206,7 @@ nav {
   border-radius: 80px 0px;
   border: 0px solid black;
   width: 1255px;
-  height: 700px;
+  height: 750px;
 }
 
 .hero_left {
@@ -434,6 +440,13 @@ ul {
   padding-left:0;
 }
 
+#logo_banner {
+  padding: 0;
+  margin: 0;
+  gap: 0;
+  line-height: 10%;
+}
+
 a {
   color: var(--Deep-Dark, #1E1E1E);
   font-family: 'DM Sans';
@@ -555,49 +568,31 @@ label, #toggle {
 }
 
 @media (max-width: 1800px) {
-  .hero_right {
-    width: 1285px;
-  }
+  .hero_right {width: 1285px;}
 }
 @media (max-width: 1700px) {
-  .hero_right {
-    width: 1285px;
-  }
+  .hero_right {width: 1285px;}
 }
 @media (max-width: 1600px) {
-  .hero_right {
-    width: 1295px;
-  }
+  .hero_right {width: 1295px;}
 }
 @media (max-width: 1500px) {
-  .hero_right {
-    width: 1300px;
-  }
+  .hero_right {width: 1300px;}
 }
 @media (max-width: 1400px) {
-  .hero_right {
-    width: 1310px;
-  }
+  .hero_right {width: 1310px;}
 }
 @media (max-width: 1300px) {
-  .hero_right {
-    width: 1320px;
-  }
+  .hero_right {width: 1320px;}
 }
 @media (max-width: 1200px) {
-  .hero_right {
-    width: 1340px;
-  }
+  .hero_right {width: 1340px;}
 }
 @media (max-width: 1100px) {
-  .hero_right {
-    width: 1360px;
-  }
+  .hero_right {width: 1360px;}
 }
 @media (max-width: 1000px) {
-  .hero_right {
-    width: 1380px;
-  }
+  .hero_right {width: 1380px;}
 }
 @media (max-width: 900px) {
 
@@ -611,9 +606,7 @@ label, #toggle {
     text-decoration: none;
   }
 
-  nav {
-    height: 60px;
-  }
+  nav {height: 60px;}
 
   nav .menu {
     display: none;
@@ -646,15 +639,19 @@ label, #toggle {
     display: flex;
   }
 
-  .hero_right {
-    width: 1340px;
-  }
+  .hero_right {width: 1340px;}
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
 
-  .text_banner_yellow {
-    display: none;
-  }
+html {
+
+}
+
+body {
+  overflow-x:hidden;
+}
+
+  .text_banner_yellow {display: none;}
 
   /* hide classic menu */
   #topnav_responsive_menu {
@@ -818,7 +815,7 @@ label, #toggle {
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 900px) {
 
   /* disable horizontal scrolling  */
   #root {
@@ -844,8 +841,10 @@ label, #toggle {
   .container {
     width: auto;
     margin: 0;
-    padding: calc(0.257*100%/5);
+    padding-right: calc(0.257*100%/5);
+    padding-left: calc(0.257*100%/5);
     width: calc(4.515*100%/5);
+    padding-bottom: 0px;
     border: 0px solid green;
   }
 
@@ -871,21 +870,20 @@ label, #toggle {
 
   .contact {
     background-image: url("../images/map.svg");
-    background-size: center;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: right -160px bottom 250px;
 
     display: flex;
-    margin: 80px 0px;
-    padding-bottom: 88px;
-    padding-top: 124px;
+    margin-top: 80px;
+    padding-bottom: 0px;
+    padding-top: 0px;
     padding-left: 30px;
     padding-right: 88px;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     width: auto;
-    height: 500px;
+    height: 350px;
     gap: 40px;
     flex-shrink: 0;
   }
@@ -925,13 +923,9 @@ label, #toggle {
     padding-left: calc(0.257*100%/5);
   }
 
-  .hero_left img {
-    padding-left: calc(0.75*100%/5);
-  }
+  .hero_left img {padding-left: calc(0.75*100%/5);}
 
-  .hero_left a {
-    display: none;
-  }
+  .hero_left a {display: none;}
 
   .text_banner_yellow_sticky {
     display: flex;
@@ -957,9 +951,7 @@ label, #toggle {
     text-decoration: none;
   }
 
-  .hero_right {
-    display: none;
-  }
+  .hero_right {display: none;}
 
   .bkg_black_left_aligned {
     display: flex;
@@ -1062,11 +1054,11 @@ label, #toggle {
     height: auto;
     border-radius: 80px 0px 0px 0px;
     border: 0px solid grey;
-
+    margin-top: 40px;
     padding-left: calc(0.5*100%/5);
     padding-right: calc(0.25*100%/5);
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
